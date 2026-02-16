@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  claw-control:
+    build: .
+    container_name: claw-control
+    ports:
+      - "127.0.0.1:8787:8787"
+    environment:
+      - CLAW_TOKEN=${CLAW_TOKEN}
+      - HOST=0.0.0.0
+    restart: unless-stopped

@@ -1,0 +1,8 @@
+{
+  "_comment": "Permissions configuration (future use)",
+  "permissions": {
+    "filesystem_access": true,
+    "network_access": true,
+    "browser_access": true
+  }
+}

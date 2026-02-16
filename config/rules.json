@@ -1,0 +1,20 @@
+{
+  "_comment": "These are EXAMPLE rules only. Tune patterns for your specific environment to avoid false positives.",
+  "rules": [
+    {
+      "id": "default-security",
+      "name": "Default Security Rules (Example)",
+      "block_patterns": [
+        "rm -rf",
+        "sudo",
+        "chmod 777"
+      ],
+      "allowed_paths": [
+        "/tmp",
+        "/var/tmp"
+      ],
+      "rate_limit_per_min": 60,
+      "enabled": true
+    }
+  ]
+}
